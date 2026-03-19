@@ -78,7 +78,7 @@ JSON
 <br>
 
 ---------------------------------------------------------------------
-             *โปรแกรมนี้สร้างขึ้นเพื่อการศึกษาเท่านั้น*
+*โปรแกรมนี้สร้างขึ้นเพื่อการศึกษาเท่านั้น*
 ---------------------------------------------------------------------
 # ⚖️ Disclaimer
 This project is for educational purposes only. Using self-bots can violate Discord's Terms of Service. Use it at your own risk. The developer is not responsible for any banned accounts or leaked tokens.
