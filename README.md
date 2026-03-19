@@ -30,38 +30,26 @@
 3. เปลี่ยนชื่อไฟล์ `config.json.example` เป็น `config.json` แล้วใส่ Token
 4. รันโปรแกรมด้วยคำสั่ง `node index.js`
 ---------------------------------------------------------------------
-##🔍 การหา Discord Token
-⚠️ สำคัญมาก: Token เปรียบเสมือนรหัสผ่านชุดที่สอง ห้ามส่งให้ใครเด็ดขาด หากหลุดไปผู้อื่นสามารถเข้าควบคุมบัญชีของคุณได้ทันที!
+#### 🔍 วิธีการหา Discord Token
+> **⚠️ สำคัญ:** Token คือรหัสผ่านชุดที่สอง **ห้ามส่งให้ใครเด็ดขาด!**
 
-เข้าสู่ระบบ: เปิด Discord ผ่าน Browser (Chrome/Edge) ที่ discord.com/app
-
-เปิดเครื่องมือผู้พัฒนา: กดปุ่ม F12 หรือ Ctrl + Shift + I
-
-ไปที่แถบ Network:
-
-คลิกที่แถบ Network ด้านบน
-
-ในช่อง Filter ให้พิมพ์คำว่า /api/v9/users/@me
-
-กด F5 เพื่อ Refresh หน้าเว็บหนึ่งครั้ง
-
-คัดลอก Token:
-
-คลิกที่รายการชื่อ @me ที่ปรากฏขึ้นมา
-
-ดูที่หัวข้อ Headers ทางด้านขวา
-
-เลื่อนหาบรรทัดที่เขียนว่า authorization:
-
-คัดลอกชุดตัวอักษรยาวๆ ด้านหลังมาใส่ในไฟล์ config.json ในช่อง "token": "ใส่ตรงนี้"
+1. **เข้าสู่ระบบ:** เปิด Discord ใน Browser [discord.com/app](https://discord.com/app)
+2. **เปิด DevTools:** กด `F12` หรือ `Ctrl + Shift + I`
+3. **ไปที่ Network:** - เลือกแถบ **Network** ด้านบน 
+   - ในช่อง Filter พิมพ์ `/api/v9/users/@me` 
+   - กด `F5` เพื่อรีเฟรชหน้าเว็บ
+4. **การคัดลอกและใช้งาน:**
+   - คลิกรายการชื่อ `@me` 
+   - ดูที่หัวข้อ **Headers** > เลื่อนหา `authorization:`
+   - *คัดลอกชุดตัวอักษรยาวๆ ด้านหลังมาใส่ในไฟล์ `config.json` ในช่อง `"token": "ใส่ตรงนี้"`*
 ---------------------------------------------------------------------
-
+<p align="center">
 <img width="511" height="480" alt="image" src="https://github.com/user-attachments/assets/f2ec46f3-d1e5-4e50-a20f-f0a91ef4d438" />
-
+</p>
 <br>
-
-<img width="591" height="213" alt="image" src="https://github.com/user-attachments/assets/a28e6daa-3022-4f2a-a05a-abff4ac4e523" />
-
+<p align="center">
+<img width="687" height="231" alt="image" src="https://github.com/user-attachments/assets/9f13be00-5da9-4e47-ac0b-6d29ced2e910" />
+</p>
 ---------------------------------------------------------------------
 *โปรแกรมนี้สร้างขึ้นเพื่อการศึกษาเท่านั้น*
 ---------------------------------------------------------------------
