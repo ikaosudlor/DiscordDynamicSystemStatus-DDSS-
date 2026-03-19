@@ -1,0 +1,17 @@
+{
+  "name": "discord-system-status-pro",
+  "version": "1.0.0",
+  "description": "Show CPU/RAM usage on Discord Status",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.7",
+    "systeminformation": "^5.11.9"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
