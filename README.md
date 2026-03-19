@@ -2,7 +2,7 @@
 # 📊 Discord System Status Tracker
 อัปเดตสถานะ DiscordStatus ด้วยค่าการใช้งาน CPU และ RAM แบบ Real-time
 ---------------------------------------------------------------------
-🧠 อธิบายการทำงาน (How It Works)
+# 🧠 อธิบายการทำงาน (How It Works)
 
     โปรแกรมนี้ทำงานในรูปแบบ Background Service โดยมีกระบวนการดังนี้:
     System Data Fetching: ใช้ Library systeminformation เพื่อเข้าถึง Kernel ของระบบปฏิบัติการ และดึงค่าการทำงานของ Hardware แบบ Real-time
@@ -11,7 +11,7 @@
     Looping: โปรแกรมจะทำงานซ้ำตามระยะเวลาที่ตั้งไว้ใน interval_ms เพื่อให้สถานะอัปเดตอยู่เสมอโดยไม่กินทรัพยากรเครื่อง
 
 ---------------------------------------------------------------------
-⚠️ คำเตือนสำคัญ (Critical Warnings)
+# ⚠️ คำเตือนสำคัญ (Critical Warnings)
  [!IMPORTANT]
     โปรดอ่านก่อนใช้งาน เพื่อความปลอดภัยของบัญชีของคุณ
 
@@ -24,23 +24,24 @@
     Process Management:หากต้องการหยุดโปรแกรมให้กด Ctrl + C ในหน้าConsoleเท่านั้นหากปิดหน้าต่างไปโดยไม่หยุดโปรแกรม มันอาจยังค้างอยู่ในระบบ(Check Task Manager)
     
 ---------------------------------------------------------------------
-📥 ขั้นตอนการติดตั้ง (Installation)
+# 📥 ขั้นตอนการติดตั้ง (Installation)
+
 1. ติดตั้ง Node.js ที่รองรับ (แนะนำ Version 18.x หรือสูงกว่า)
 
 2. คลอนหรือดาวน์โหลดโปรเจกต์:
 
-
-# คลอนโปรเจกต์จาก GitHub
+```
 git clone https://github.com/ikaosudlor/DiscordDynamicSystemStatus-DDSS-.git
-# เข้าไปยังโฟลเดอร์โปรเจกต์
-cd discord-system-status
-# ติดตั้ง Library ที่จำเป็น
-npm install systeminformation node-fetch@2
-# เริ่มรันโปรแกรม
-node index.js
 
+cd discord-system-status
+
+npm install systeminformation node-fetch@2
+
+node index.js 
+```
 ---------------------------------------------------------------------
-⚙️ การตั้งค่าก่อนเริ่มรัน (Configuration)
+
+# ⚙️ การตั้งค่าก่อนเริ่มรัน (Configuration)
 ก่อนจะใช้คำสั่ง node index.js อย่าลืมเตรียมไฟล์ config.json ให้เรียบร้อย:
 
 JSON
@@ -52,7 +53,7 @@ JSON
 
 นำชุดตัวอักษรยาวๆ มาวางในช่อง token โดยต้องอยู่ในเครื่องหมายคำพูด " " เท่านั้น
 ---------------------------------------------------------------------
-#### 🔍 วิธีการหา Discord Token
+# 🔍 วิธีการหา Discord Token
 > **⚠️ สำคัญ:** Token คือรหัสผ่านชุดที่สอง **ห้ามส่งให้ใครเด็ดขาด!**
 
 1. **เข้าสู่ระบบ:** เปิด Discord ใน Browser [discord.com/app](https://discord.com/app)
@@ -65,7 +66,7 @@ JSON
    - ดูที่หัวข้อ **Headers** > เลื่อนหา `authorization:`
    - *คัดลอกชุดตัวอักษรยาวๆ ด้านหลังมาใส่ในไฟล์ `config.json` ในช่อง `"token": "ใส่ตรงนี้"`*
 ---------------------------------------------------------------------
-##รูปตัวอย่างการทำงาน
+# รูปตัวอย่างการทำงาน
 <br>
 <p align="center">
 <img width="511" height="480" alt="image" src="https://github.com/user-attachments/assets/f2ec46f3-d1e5-4e50-a20f-f0a91ef4d438" />
@@ -77,7 +78,7 @@ JSON
 <br>
 
 ---------------------------------------------------------------------
-*โปรแกรมนี้สร้างขึ้นเพื่อการศึกษาเท่านั้น*
+             *โปรแกรมนี้สร้างขึ้นเพื่อการศึกษาเท่านั้น*
 ---------------------------------------------------------------------
-## ⚖️ Disclaimer
+# ⚖️ Disclaimer
 This project is for educational purposes only. Using self-bots can violate Discord's Terms of Service. Use it at your own risk. The developer is not responsible for any banned accounts or leaked tokens.
